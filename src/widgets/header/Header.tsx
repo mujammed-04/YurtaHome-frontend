@@ -3,7 +3,10 @@ import { Basket, Like, Logo, User } from '../../shared/icons';
 import { Button, Typography } from '@mui/material';
 import './header.css'
 import { CInput } from '../../shared/ui';
+import { useTranslation } from 'react-i18next';
 export default function Header() {
+    const { t } = useTranslation('header');
+
     return (
         <header className='header'>
             <div className="container">
@@ -11,17 +14,17 @@ export default function Header() {
                     <div className="logo">
                         <Link to='/'><img src={Logo} alt="logo" /></Link>
                         <div className="subtitle">
-                            <Typography sx={{color:'var(--blue)'}}>Сообщество</Typography>
-                            <Typography>Покупка</Typography>
-                            <Typography>Интерьер комнаты</Typography>
+                            <Typography sx={{color:'var(--blue)'}}>{t('community')}</Typography>
+                            <Typography>{t('purchase')}</Typography>
+                            <Typography>{t('roomInterior')}</Typography>
                         </div>
                     </div>
                     <div className="buttons">
-                        <CInput placeholder='search' className='search'/>
+                        <CInput placeholder={t('search')} className='search'/>
                         <Link to='/'><img src={User} alt="user" /></Link>
                         <Link to='/'><img src={Like} alt="user" /></Link>
                         <Link to='/'><img src={Basket} alt="user" /></Link>
-                        <Button>Письмо</Button>
+                        <Button>{t('letter')}</Button>
                     </div>
                 </div>
                 
