@@ -1,0 +1,20 @@
+.navbar {
+    margin: 10px 0;
+    border-bottom: 2px solid rgba(120, 120, 120, .75);
+}
+.navbar__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+.navbar a {
+    font-family: "Noto Sans KR";
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--dark);
+}
+
+.navbar a.active {
+    color: var(--blue);
+}
