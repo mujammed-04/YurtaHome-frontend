@@ -5,6 +5,7 @@
   --blue: #1591EA;
   --white: #ffffff;
   --active-blue: #045c9b;
+  --dark: #2F3438;
 }
 
 *{
@@ -13,5 +14,5 @@
   box-sizing: border-box;
 }
 .container{
-  padding: 20px 10%;
+  padding: 0 10%;
 }
