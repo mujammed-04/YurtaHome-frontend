@@ -7,15 +7,13 @@ export default function Navbar() {
     const { t } = useTranslation('navbar');
 
     const tabs = [
-        { tab: 'main', name: t('main') },
-        { tab: 'events', name: t('events') },
-        { tab: 'hobby', name: t('hobby') },
-        { tab: 'homeRestaurant', name: t('homeRestaurant') },
-        { tab: 'interiorOfTheDay', name: t('interiorOfTheDay') },
-        { tab: 'gallery', name: t('gallery') },
-        { tab: 'collection', name: t('collection') },
-        { tab: 'homeGarden', name: t('homeGarden') },
-    ];
+        { tab: "main", name: t('main') },
+        { tab: "livingRoom", name: t('livingRoom') },
+        { tab: "office", name: t('office') },
+        { tab: "kitchen", name: t('kitchen') },
+        { tab: "bedroom", name: t('bedroom') },
+        { tab: "balcony", name: t('balcony') }
+    ];    
 
     const [activeTab, setActiveTab] = useState('main');
 

@@ -14,8 +14,7 @@ export default function Header() {
                     <div className="logo">
                         <Link to='/'><img src={Logo} alt="logo" /></Link>
                         <div className="subtitle">
-                            <Typography sx={{color:'var(--blue)'}}>{t('community')}</Typography>
-                            <Typography>{t('purchase')}</Typography>
+                            <Typography>{t('community')}</Typography>
                             <Typography>{t('roomInterior')}</Typography>
                         </div>
                     </div>

@@ -1,10 +1,8 @@
 {
-    "main":"Главная",
-    "events":"Событие",
-    "hobby":"Хобби",
-    "homeRestaurant":"Домашний ресторан",
-    "interiorOfTheDay":"Интерьер дня",
-    "gallery":"Галерея",
-    "collection":"Коллекция",
-    "homeGarden":"Домашний сад"
+    "main": "Главная",
+    "livingRoom": "Гостиная",
+    "office": "Офис",
+    "kitchen": "Кухня",
+    "bedroom": "Спальня",
+    "balcony": "Балкон"
 }
