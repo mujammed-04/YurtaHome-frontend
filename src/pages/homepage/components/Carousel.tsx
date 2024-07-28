@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { sBanner1, sBanner2, sBanner3, sBanner4 } from '../../../shared/images';
-import { colors } from '@mui/material';
 
 export default function CarouselComponent() {
     const [active, setActive] = useState(1);
