@@ -48,3 +48,35 @@
 .subtitle {
     font-size: 16px;
 }
+
+
+.icons{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.icon-item{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.icon-item p{
+    display: block;
+    white-space: pre-wrap;
+    text-wrap: wrap;
+}
+.icon-image{
+    padding: 10px;
+    display: flex;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    width: fit-content;
+    justify-content: center;
+}
+.icon-item img{
+    height: 40px;
+}
