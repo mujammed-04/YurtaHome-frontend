@@ -1,0 +1,50 @@
+.banner {
+    padding: 40px 0px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.small-banner {
+    opacity: 0;
+    display: none;
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2C2C2C;
+    font-weight: 500;
+    transition: opacity 1s ease-in-out;
+}
+
+.small-banner.active {
+    display: flex;
+    animation: fadeIn 30s both ease-in ;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.title {
+    font-size: 20px;
+}
+
+.subtitle {
+    font-size: 16px;
+}
