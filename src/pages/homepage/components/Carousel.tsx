@@ -42,7 +42,7 @@ export default function CarouselComponent() {
             {images.map(item => (
                 <div 
                     key={item.id} 
-                    className={active === item.id ? 'small-banner active' : 'small-banner fade-out'}
+                    className={active === item.id ? 'small-banner active' : 'small-banner'}
                     style={{ backgroundColor: item.color }}
                 >
                     <p className="title">Тренды в дизайне</p>
