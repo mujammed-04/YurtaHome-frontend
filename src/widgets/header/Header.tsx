@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Basket, Like, Logo, User } from '../../shared/icons';
 import { Button, Typography } from '@mui/material';
-import './header.css'
+import './header.scss'
 import { CInput } from '../../shared/ui';
 import { useTranslation } from 'react-i18next';
 export default function Header() {
