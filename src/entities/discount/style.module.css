@@ -1,0 +1,68 @@
+.discountCard{
+    padding: 0 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    flex: 1 0 25%;
+    max-width: 25%;
+}
+.discountImage{
+    display: flex;
+}
+.discountImage img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+}
+.discountHeader{
+    position: relative;
+    height: 0;
+    display: flex;
+    right: 100%;
+    gap: calc(100% + 5px);
+    top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.discountHeader img{
+    border-radius: 0;
+    width: 20px;
+    height: 22px;
+}
+.discountText{
+    margin-left: 5%;
+    padding: 5px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #FE4118;
+    width: 80px;
+    color: white;
+}
+.grades{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricing{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+    background-color: #1591EA;
+    border: none;
+    border-radius: 10px;
+}
+.discountInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
