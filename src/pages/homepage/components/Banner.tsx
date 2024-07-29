@@ -1,5 +1,5 @@
 import { bBanner } from "../../../shared/images";
-import CarouselComponent from './Carousel';
+import CarouselComponent from './CarouselComponent';
 
 
 export default function Banner() {
