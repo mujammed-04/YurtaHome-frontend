@@ -1,4 +1,5 @@
 import Banner from './components/Banner';
+import CarouselDiscount from './components/CarouselDiscount';
 import CarouselPhotos from './components/CarouselPhotos';
 import CarouselRooms from './components/CarouselRooms';
 import Icons from './components/Icons';
@@ -12,6 +13,7 @@ export default function HomePage() {
                     <Icons />
                     <CarouselPhotos />
                     <CarouselRooms />
+                    <CarouselDiscount />
                 </div>
             </div>
         </section>

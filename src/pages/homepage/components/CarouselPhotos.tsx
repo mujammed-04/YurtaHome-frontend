@@ -57,7 +57,7 @@ export default function CarouselPhotos() {
                             </div>
                         </div>
                         <div className="carousel-item" key={index}>
-                            <img src={item.srcImage} alt={item.name} />
+                            <img src={item.srcImage} alt={item.name} className='zoom'/>
                         </div>
                         <div className="saves">
                             <img src={Save} alt="" />
