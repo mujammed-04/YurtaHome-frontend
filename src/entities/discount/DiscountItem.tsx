@@ -31,7 +31,7 @@ const DiscountItem: React.FC<Props> = ({ discount }) => {
                 <div className={styles.discountHeader}>
                     <p className={styles.discountText}>{time ? `${time.hours}:${time.minutes}:${time.seconds}`
                         : 'N/A'}</p>
-                    <img src={SaveBlack} alt="" />
+                    {/* <img src={SaveBlack} alt="" /> */}
                 </div>
             </div>
             <div className={styles.discountInfo}>
