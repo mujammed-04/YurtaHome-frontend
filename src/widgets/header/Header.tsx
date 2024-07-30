@@ -4,7 +4,9 @@ import { Button, Typography } from '@mui/material';
 import './header.scss'
 import { CInput } from '../../shared/ui';
 import { useTranslation } from 'react-i18next';
+
 export default function Header() {
+
     const { t } = useTranslation('header');
 
     return (
@@ -26,7 +28,6 @@ export default function Header() {
                         <Button>{t('letter')}</Button>
                     </div>
                 </div>
-                
             </div>
         </header>
     );

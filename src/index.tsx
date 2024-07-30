@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './app/App';
-import './features/locale/i18n'
+import './features/locale/i18n.ts'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
