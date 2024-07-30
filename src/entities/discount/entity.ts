@@ -4,6 +4,16 @@ import { useEffect, useState } from "react";
 
 dayjs.extend(duration);
 
+export interface Props {
+    title: string;
+    subtitle?: string;
+    items: Discount[];
+    interior?: boolean;
+    house?: boolean;
+    discount?: boolean;
+}
+
+
 export interface Discount{
     id?:number;
     image?: string;
@@ -14,6 +24,8 @@ export interface Discount{
     oldPrice?: number;
     comments?: number;
     discountTime?: string;
+    personImage?: string;
+    personName?: string;
 }
 
 export interface TimeLeft {

@@ -11,12 +11,15 @@ i18n
     lng: 'ru',
     fallbackLng: 'ru',
     debug: false,
-    ns: ['translation'],
-    defaultNS: 'translation',
-    fallbackNS: 'translation',
+    ns: ['header','navbar','carousel','icons'],
+    defaultNS: 'icons',
+    fallbackNS: 'icons',
     interpolation: {
       escapeValue: false,
     },
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json'
+    }
   });
 
 export default i18n;
