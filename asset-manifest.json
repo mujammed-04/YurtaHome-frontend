@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/YurtaHome-frontend/static/css/main.ed2e5d86.css",
-    "main.js": "/YurtaHome-frontend/static/js/main.173584d6.js",
+    "main.css": "/YurtaHome-frontend/static/css/main.7c5d2b4e.css",
+    "main.js": "/YurtaHome-frontend/static/js/main.1555bbfd.js",
     "static/media/bBanner.png": "/YurtaHome-frontend/static/media/bBanner.7227d8d0388df0d90731.png",
     "static/media/d1.png": "/YurtaHome-frontend/static/media/d1.2931fa1969e348c48310.png",
     "static/media/d4.png": "/YurtaHome-frontend/static/media/d4.c142ce0b08038b2034bc.png",
@@ -41,11 +41,11 @@
     "index.html": "/YurtaHome-frontend/index.html",
     "static/media/search.svg": "/YurtaHome-frontend/static/media/search.facae0e9349f99d5f3f7f662e79c66f9.svg",
     "static/media/getFetch.cjs": "/YurtaHome-frontend/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.ed2e5d86.css.map": "/YurtaHome-frontend/static/css/main.ed2e5d86.css.map",
-    "main.173584d6.js.map": "/YurtaHome-frontend/static/js/main.173584d6.js.map"
+    "main.7c5d2b4e.css.map": "/YurtaHome-frontend/static/css/main.7c5d2b4e.css.map",
+    "main.1555bbfd.js.map": "/YurtaHome-frontend/static/js/main.1555bbfd.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed2e5d86.css",
-    "static/js/main.173584d6.js"
+    "static/css/main.7c5d2b4e.css",
+    "static/js/main.1555bbfd.js"
   ]
 }
