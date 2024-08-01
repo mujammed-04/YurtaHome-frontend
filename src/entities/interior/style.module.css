@@ -1,13 +1,16 @@
 .interiorCard {
   display: flex;
+
 }
 .carouselItem {
   display: flex;
+  overflow: hidden;
   align-items: flex-start;
   flex: 1 0 16.66%;
   max-width: 16.66%;
   box-sizing: border-box;
-  padding-right: 15px;
+  border-radius: 10px;
+  padding: 10px 5px;
 }
 
 .carouselItem img {
@@ -42,7 +45,4 @@
   width: 0px;
   right: calc(45px);
   top: 10px;
-}
-.saves img {
-    transition: transform 0.3s ease;
 }

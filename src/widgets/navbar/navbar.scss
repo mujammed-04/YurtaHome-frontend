@@ -1,15 +1,10 @@
 .navbar {
-  margin: 70px 0;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  position: fixed;
-  top: 0;
+  border-bottom: 1px solid #B7B7B7;
   width: 100%;
-  background-color: #ffffff;
   color: white;
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
-  z-index: 1000;
 
   a {
     font-family: 'Noto Sans KR';

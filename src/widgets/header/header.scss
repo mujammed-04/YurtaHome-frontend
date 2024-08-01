@@ -1,13 +1,10 @@
 .header {
+  background-color: white;
   position: fixed;
+  margin: 0;
   top: 0;
+  z-index: 10;
   width: 100%;
-  background-color: #ffffff;
-  color: #2f3438;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0px;
-  z-index: 1000;
 }
 .header__wrapper {
   display: flex;
