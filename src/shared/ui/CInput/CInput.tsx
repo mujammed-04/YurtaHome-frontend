@@ -1,21 +1,11 @@
-import React, { FC, ChangeEvent, useState } from "react";
+import { FC } from "react";
 import styles from './style.module.css';
 
 interface CInputProps {
-  placeholder?: string;
-  value?: string;
-  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
-  padding?: string;
   image?: string;
 }
 
-export const CInput: FC<CInputProps> = ({ placeholder, value, onChange, image }) => {
-  const [active, setActive] = useState(false);
-
-  const handleButtonClick = () => {
-    setActive(!active);
-  };
-
+export const CInput: FC<CInputProps> = ({ image }) => {
   return (
     <form className={styles.form}>
         <input type="text" className={styles.input} />
