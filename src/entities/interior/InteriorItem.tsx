@@ -1,4 +1,5 @@
-import { Save } from "../../shared/icons";
+import { BookMark, Liked } from "../../shared/icons";
+import { CFavourite } from "../../shared/ui";
 import { Discount } from "../discount/entity";
 import styles from './style.module.css';
 
@@ -16,11 +17,9 @@ const InteriorItem: React.FC<Props> = ({ interior }) => {
                 </div>
             </div>
             <div className={styles.carouselItem}>
-                <img src={interior.image} alt={interior.name} className='zoom' />
+                <img src={interior.image} alt={interior.name} />
             </div>
-            <div className={styles.saves}>
-                <img src={Save} alt="" />
-            </div>
+            <CFavourite imageSelected={Liked} imageUnselected={BookMark} className={styles.saves} />
         </>
     );
 };
