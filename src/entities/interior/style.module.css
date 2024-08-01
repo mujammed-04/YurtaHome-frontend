@@ -1,48 +1,47 @@
-.interiorCard{
-    display: flex;
+.interiorCard {
+  display: flex;
 }
 .carouselItem {
-    display: flex;
-    align-items: flex-start;
-    flex: 1 0 16.66%;
-    max-width: 16.66%;
-    box-sizing: border-box;
-    padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex: 1 0 16.66%;
+  max-width: 16.66%;
+  box-sizing: border-box;
+  padding-right: 15px;
 }
 
 .carouselItem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .personIcon {
-    position: relative;
-    display: flex;
-    align-items: end;
-    z-index: 3;
-    width: 0;
-    left: 15px;
-    bottom: 20px;
-    color: white;
+  position: relative;
+  display: flex;
+  align-items: end;
+  z-index: 3;
+  width: 0;
+  left: 15px;
+  bottom: 20px;
+  color: white;
 }
 
 .personInfo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .personIcon img {
-    width: 32px;
+  width: 32px;
 }
 
 .saves {
-    position: relative;
-    width: 0px;
-    right: calc(45px);
-    top: 10px;
-    cursor: pointer;
+  position: relative;
+  width: 0px;
+  right: calc(45px);
+  top: 10px;
 }
 .saves img {
     transition: transform 0.3s ease;
