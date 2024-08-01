@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/YurtaHome-frontend/static/css/main.f62a81c6.css",
-    "main.js": "/YurtaHome-frontend/static/js/main.3a0b0bc2.js",
+    "main.js": "/YurtaHome-frontend/static/js/main.f7219cf5.js",
     "static/media/bBanner.png": "/YurtaHome-frontend/static/media/bBanner.7227d8d0388df0d90731.png",
     "static/media/d1.png": "/YurtaHome-frontend/static/media/d1.2931fa1969e348c48310.png",
     "static/media/d4.png": "/YurtaHome-frontend/static/media/d4.c142ce0b08038b2034bc.png",
@@ -43,10 +43,10 @@
     "index.html": "/YurtaHome-frontend/index.html",
     "static/media/search.svg": "/YurtaHome-frontend/static/media/search.00e2bf34fa34e1e9dcd5f4bb9e001dbf.svg",
     "main.f62a81c6.css.map": "/YurtaHome-frontend/static/css/main.f62a81c6.css.map",
-    "main.3a0b0bc2.js.map": "/YurtaHome-frontend/static/js/main.3a0b0bc2.js.map"
+    "main.f7219cf5.js.map": "/YurtaHome-frontend/static/js/main.f7219cf5.js.map"
   },
   "entrypoints": [
     "static/css/main.f62a81c6.css",
-    "static/js/main.3a0b0bc2.js"
+    "static/js/main.f7219cf5.js"
   ]
 }
