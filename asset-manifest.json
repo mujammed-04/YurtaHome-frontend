@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/YurtaHome-frontend/static/css/main.7c5d2b4e.css",
-    "main.js": "/YurtaHome-frontend/static/js/main.4b038efa.js",
+    "main.css": "/YurtaHome-frontend/static/css/main.905c1a64.css",
+    "main.js": "/YurtaHome-frontend/static/js/main.31246f3b.js",
     "static/media/bBanner.png": "/YurtaHome-frontend/static/media/bBanner.7227d8d0388df0d90731.png",
     "static/media/d1.png": "/YurtaHome-frontend/static/media/d1.2931fa1969e348c48310.png",
     "static/media/d4.png": "/YurtaHome-frontend/static/media/d4.c142ce0b08038b2034bc.png",
@@ -25,7 +25,7 @@
     "static/media/logo.svg": "/YurtaHome-frontend/static/media/logo.b117f875426aee45be7da80d3729cd6a.svg",
     "static/media/delivery.svg": "/YurtaHome-frontend/static/media/delivery.ab2959e6757041389fa943158c781c68.svg",
     "static/media/deal.svg": "/YurtaHome-frontend/static/media/deal.4b27c9ca21aabcf5d17dcc7e3ab28568.svg",
-    "static/media/save.svg": "/YurtaHome-frontend/static/media/save.ff8b6449ffea7a7531e7ed26e0054989.svg",
+    "static/media/bookMark.svg": "/YurtaHome-frontend/static/media/bookMark.ff8b6449ffea7a7531e7ed26e0054989.svg",
     "static/media/cleaning.svg": "/YurtaHome-frontend/static/media/cleaning.edbd6e2bfe6a31872b2f23e5e76d7862.svg",
     "static/media/vk.svg": "/YurtaHome-frontend/static/media/vk.93e19677e8dd4408272d8786abb1d550.svg",
     "static/media/message.svg": "/YurtaHome-frontend/static/media/message.4cd7aeb945313075f95e5c80669d93c0.svg",
@@ -37,15 +37,15 @@
     "static/media/star.svg": "/YurtaHome-frontend/static/media/star.eb9c4eb44495f11a73834657ef46410e.svg",
     "static/media/starY.svg": "/YurtaHome-frontend/static/media/starY.93b41429eba43d23db0e23035d65cea3.svg",
     "static/media/basket.svg": "/YurtaHome-frontend/static/media/basket.9ffef6b2d775a6f145512985cd8d7c5f.svg",
+    "static/media/liked.svg": "/YurtaHome-frontend/static/media/liked.6bf2482e0835d7755bdd86c849f6d590.svg",
     "static/media/like.svg": "/YurtaHome-frontend/static/media/like.588fca357bb6f91c3d36b311d82d83f7.svg",
     "index.html": "/YurtaHome-frontend/index.html",
     "static/media/search.svg": "/YurtaHome-frontend/static/media/search.facae0e9349f99d5f3f7f662e79c66f9.svg",
-    "static/media/getFetch.cjs": "/YurtaHome-frontend/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.7c5d2b4e.css.map": "/YurtaHome-frontend/static/css/main.7c5d2b4e.css.map",
-    "main.4b038efa.js.map": "/YurtaHome-frontend/static/js/main.4b038efa.js.map"
+    "main.905c1a64.css.map": "/YurtaHome-frontend/static/css/main.905c1a64.css.map",
+    "main.31246f3b.js.map": "/YurtaHome-frontend/static/js/main.31246f3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c5d2b4e.css",
-    "static/js/main.4b038efa.js"
+    "static/css/main.905c1a64.css",
+    "static/js/main.31246f3b.js"
   ]
 }
