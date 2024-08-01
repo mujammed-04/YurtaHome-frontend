@@ -1,18 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import './navbar.scss'
-import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
-    const { t } = useTranslation('navbar');
-
     const tabs = [
-        { tab: "main", name: t('main') },
-        { tab: "livingRoom", name: t('livingRoom') },
-        { tab: "office", name: t('office') },
-        { tab: "kitchen", name: t('kitchen') },
-        { tab: "bedroom", name: t('bedroom') },
-        { tab: "balcony", name: t('balcony') }
+        { tab: "main", name: 'Главная' },
+        { tab: "livingRoom", name: 'Гостиная' },
+        { tab: "office", name: 'Офис' },
+        { tab: "kitchen", name: 'Кухня' },
+        { tab: "bedroom", name: 'Спальня' },
+        { tab: "balcony", name: 'Балкон' }
     ];    
 
     const [activeTab, setActiveTab] = useState('main');

@@ -3,14 +3,12 @@ import { useTimeLeft, Discount } from './entity';
 import styles from './style.module.css';
 import { Message, Star, StarY } from '../../shared/icons';
 import { Typography } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 
 interface Props {
     discount: Discount;
 }
 
 const DiscountItem: React.FC<Props> = ({ discount }) => {
-    const { t } = useTranslation('carousel');
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const time = discount.discountTime ? useTimeLeft(discount.discountTime) : null;
 
@@ -36,13 +34,13 @@ const DiscountItem: React.FC<Props> = ({ discount }) => {
                 </div>
             </div>
             <div className={styles.discountInfo}>
-                <Typography sx={{ color: '#6E6E6E', fontFamily: 'Inter', fontWeight: '400', fontSize: '14px' }}>{`${t('category')} (${discount.category})`}</Typography>
+                <Typography sx={{ color: '#6E6E6E', fontFamily: 'Inter', fontWeight: '400', fontSize: '14px' }}>{`Категория (${discount.category})`}</Typography>
                 <Typography sx={{ color: '#4B4B4B', fontFamily: 'Inter', fontWeight: '500', fontSize: '18px' }}>{discount.name}</Typography>
                 <div className={styles.grades}>
                     {discount.rate && <StarRating rating={discount.rate} />}
                     <div style={{display:'flex',gap:'5px'}}>
                         <img src={Message} alt="" />
-                        <Typography sx={{ fontSize:'12px', color:'#6E6E6E', fontFamily:'Inter'}}>{discount.comments} {t('comments')}</Typography>
+                        <Typography sx={{ fontSize:'12px', color:'#6E6E6E', fontFamily:'Inter'}}>{discount.comments} Отзыва</Typography>
                     </div>
                 </div>
                 <div className={styles.pricing}>
@@ -50,7 +48,7 @@ const DiscountItem: React.FC<Props> = ({ discount }) => {
                         <p style={{ fontSize:'20px', color:'#4B4B4B', fontFamily:'Inter', fontWeight:'700'}}>{discount.newPrice} тг</p>
                         <p style={{ fontSize:'14px', color:'#6E6E6E', fontFamily:'Inter', fontWeight:'400', textDecoration:'line-through'}}>{discount.oldPrice} тг</p>
                     </div>
-                    <button className={styles.button}>{t('buy')}</button>
+                    <button className={styles.button}>Купить</button>
                 </div>
             </div>
         </div>
