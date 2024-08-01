@@ -1,0 +1,41 @@
+.form{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: width 1s;
+    width: 42.5px;
+    height: 42.5px;
+    border-radius: 25px;
+    border: 1px solid #DADDE0;
+    background: none;
+}
+
+.input{
+    position: absolute;
+    outline: none;
+    border: none;
+    display: flex;
+    background: none;
+    font-size: 16px;
+    margin: 0 20px 0 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.fa{
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    right: -5px;
+    border-radius: 50%;
+}
+
+.form:hover{
+    width: 350px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.form:hover input{
+    display: flex;
+}

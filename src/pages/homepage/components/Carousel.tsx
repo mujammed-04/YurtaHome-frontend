@@ -2,13 +2,10 @@ import { useEffect, useState } from 'react';
 import { Button, Typography } from '@mui/material';
 import { Props } from '../../../entities/discount/entity';
 import DiscountItem from '../../../entities/discount/DiscountItem';
-import { useTranslation } from 'react-i18next';
 import InteriorItem from '../../../entities/interior/InteriorItem';
 import RoomItem from '../../../entities/room/RoomItem';
 
 const Carousel: React.FC<Props> = ({ items, title, subtitle, interior, house, discount }) => {
-
-    const { t } = useTranslation('carousel');
     const [currentIndex, setCurrentIndex] = useState(0);
     const length = items.length;
 
@@ -27,7 +24,7 @@ const Carousel: React.FC<Props> = ({ items, title, subtitle, interior, house, di
                     <Typography sx={{ color: '#2F3438', fontWeight: '700', fontFamily: 'Inter' }}>{title}</Typography>
                     <Typography sx={{ color: '#2F3438', fontSize: '14px', fontWeight: '500', fontFamily: 'Inter' }}>{subtitle}</Typography>
                 </div>
-                <Button>{t('more')}</Button>
+                <Button>Узнать больше</Button>
             </div>
             <div
                 className="discount-carousel"
