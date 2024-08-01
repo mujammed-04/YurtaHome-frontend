@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 
 :root {
-  --gray: #DADDE0;
-  --blue: #1591EA;
+  --gray: #dadde0;
+  --blue: #1591ea;
   --white: #ffffff;
   --active-blue: #045c9b;
-  --dark: #2F3438;
+  --dark: #2f3438;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container{
+.container {
   padding: 0 10%;
 }

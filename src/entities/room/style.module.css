@@ -1,15 +1,15 @@
 .carouselItem {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1 0 25%;
-    max-width: 25%;
-    box-sizing: border-box;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding-right: 10px;
 }
 
 .carouselItem img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }

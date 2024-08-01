@@ -1,64 +1,72 @@
-.header{
-    margin: 10px 0;
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #2f3438;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  z-index: 1000;
 }
-.header__wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.logo p{
-    font-family: "Noto Sans KR", sans-serif;
+.logo p {
+  font-family: 'Noto Sans KR', sans-serif;
 }
-.subtitle{
-    display: flex;
-    gap: 20px;
+.subtitle {
+  display: flex;
+  gap: 20px;
 }
-.subtitle p{
-    cursor: pointer;
+.subtitle p {
+  cursor: pointer;
 }
-.search{
-    width: 360px;
-    position: relative;
+.search {
+  width: 360px;
+  position: relative;
 }
-.search input{
-    width: 100%;
-    padding: 10px 40px 10px 10px;
-    border: 1px solid var(--gray);
-    border-radius: 4px;
+.search input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
 }
 .search::after {
-    content: '';
-    position: absolute;
-    background-image: url('../../shared/icons/search.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
+  content: '';
+  position: absolute;
+  background-image: url('../../shared/icons/search.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
-.buttons{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-.buttons button{
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: var(--blue);
-    color: var(--white);
-    font-family: "Inter";
-    line-height: 22.4px;
-    font-weight: 600;
-    text-transform: none;
+.buttons button {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: 'Inter';
+  line-height: 22.4px;
+  font-weight: 600;
+  text-transform: none;
 }
-.buttons button:hover{
-    background-color: var(--active-blue);
+.buttons button:hover {
+  background-color: var(--active-blue);
 }

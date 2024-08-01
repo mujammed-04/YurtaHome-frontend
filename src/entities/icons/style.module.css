@@ -1,28 +1,28 @@
 .iconItem {
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    text-align: center;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
 }
 
 .iconItem p {
-    display: block;
-    white-space: pre-wrap;
-    text-wrap: wrap;
+  display: block;
+  white-space: pre-wrap;
+  text-wrap: wrap;
 }
 
 .iconImage {
-    padding: 10px;
-    display: flex;
-    background-color: #F3F3F3;
-    border-radius: 20px;
-    width: fit-content;
-    justify-content: center;
+  padding: 10px;
+  display: flex;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  width: fit-content;
+  justify-content: center;
 }
 
 .iconItem img {
-    height: 40px;
+  height: 40px;
 }

@@ -1,24 +1,33 @@
 .navbar {
-    margin: 10px 0;
-    padding-bottom: 10px;
-    border-bottom: 2px solid rgba(120, 120, 120, 0.388);
+  margin: 70px 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  z-index: 1000;
 
-    a {
-        font-family: "Noto Sans KR";
-        padding: 5px 10px;
-        text-decoration: none;
-        font-size: 14px;
-        color: var(--dark);
+  a {
+    font-family: 'Noto Sans KR';
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--dark);
 
-        &.active {
-            color: var(--blue);
-            border-bottom: 2px solid var(--blue);
-        }
+    &.active {
+      color: var(--blue);
+      border-bottom: 2px solid var(--blue);
     }
+  }
 }
 
 .navbar__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+  gap: 30px;
 }
