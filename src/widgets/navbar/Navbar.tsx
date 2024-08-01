@@ -5,7 +5,7 @@ import './navbar.scss'
 export default function Navbar() {
     const tabs = [
         { tab: "main", name: 'Главная' },
-        { tab: "livingRoom", name: 'Гостиная' },
+        { tab: "living-room", name: 'Гостиная' },
         { tab: "office", name: 'Офис' },
         { tab: "kitchen", name: 'Кухня' },
         { tab: "bedroom", name: 'Спальня' },
@@ -21,7 +21,7 @@ export default function Navbar() {
                     {tabs.map(tab => (
                         <Link
                             key={tab.tab}
-                            to={`#${tab.tab}`}
+                            to={tab.tab === 'main' ? '/' : `/${tab.tab}`}
                             className={activeTab === tab.tab ? 'active' : ''}
                             onClick={() => setActiveTab(tab.tab)}
                         >

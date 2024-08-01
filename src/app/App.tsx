@@ -1,16 +1,22 @@
-import HomePage from '../pages/homepage/HomePage';
-import Footer from '../widgets/footer/Footer';
-import Header from '../widgets/header/Header';
-
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import './App.css'
+import HomePage from '../pages/homepage/HomePage';
+import RootLayout from './layout/RootLayout';
+import NotFoundPage from '../pages/notfoundpage/NotFoundPage';
+
+
 
 export default function App() {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route path="/" element={<RootLayout />} >
+            <Route index element={<HomePage />}/>
+            <Route path='*' element={<NotFoundPage/>}/>
+        </Route>
+    )
+  )
+
   return (
-    <BrowserRouter>
-      <Header/>
-      <HomePage/>
-      <Footer/>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   );
 }
