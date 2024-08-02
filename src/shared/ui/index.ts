@@ -1,2 +1,2 @@
-export * from './CInput'
-export * from './CFavourite'
+export * from "./CFavourite";
+export * from "./CInput";

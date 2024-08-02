@@ -6,7 +6,16 @@ import NotFoundPage from '../pages/notfoundpage/NotFoundPage';
 import RegisterPage from '../pages/registerpage/RegisterPage';
 import LoginPage from '../pages/loginpage/LoginPage';
 
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
+import HomePage from "../pages/homepage/HomePage";
+import NotFoundPage from "../pages/notfoundpage/NotFoundPage";
+import RootLayout from "./layout/RootLayout";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -21,7 +30,5 @@ export default function App() {
     )
   )
 
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }

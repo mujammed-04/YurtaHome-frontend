@@ -1,19 +1,19 @@
+import "./navbar.scss";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './navbar.scss'
 
 export default function Navbar() {
-    const tabs = [
-        { tab: "main", name: 'Главная' },
-        { tab: "living-room", name: 'Гостиная' },
-        { tab: "office", name: 'Офис' },
-        { tab: "kitchen", name: 'Кухня' },
-        { tab: "bedroom", name: 'Спальня' },
-        { tab: "balcony", name: 'Балкон' }
-    ];    
+  const tabs = [
+    { tab: "main", name: "Главная" },
+    { tab: "living-room", name: "Гостиная" },
+    { tab: "office", name: "Офис" },
+    { tab: "kitchen", name: "Кухня" },
+    { tab: "bedroom", name: "Спальня" },
+    { tab: "balcony", name: "Балкон" },
+  ];
 
-    const [activeTab, setActiveTab] = useState('main');
-
+  const [activeTab, setActiveTab] = useState("main");
     return (
         <nav className="navbar">
             <div className="container">

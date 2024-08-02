@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom';
-import { LogoBig, Telegram, Twitter, Vk } from '../../shared/icons';
-import './footer.scss';
+import "./footer.scss";
+
+import { Link } from "react-router-dom";
+
+import { LogoBig, Telegram, Twitter, Vk } from "../../shared/icons";
 
 export default function Footer() {
   return (
@@ -11,16 +13,16 @@ export default function Footer() {
             <img src={LogoBig} alt="Yurta Home Logo" className="footer-logo" />
             <div className="footer-social">
               <Link to="">
-                {' '}
-                <img src={Vk} alt="VK" />{' '}
+                {" "}
+                <img src={Vk} alt="VK" />{" "}
               </Link>
               <Link to="">
-                {' '}
-                <img src={Twitter} alt="Twitter" />{' '}
+                {" "}
+                <img src={Twitter} alt="Twitter" />{" "}
               </Link>
               <Link to="">
-                {' '}
-                <img src={Telegram} alt="Telegram" />{' '}
+                {" "}
+                <img src={Telegram} alt="Telegram" />{" "}
               </Link>
             </div>
           </div>

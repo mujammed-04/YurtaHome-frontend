@@ -1,1 +1,1 @@
-export * from './CFavourite';
+export * from "./CFavourite";

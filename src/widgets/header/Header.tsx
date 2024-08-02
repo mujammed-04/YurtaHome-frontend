@@ -1,12 +1,13 @@
-import './header.scss'
-import HeaderComponent from './components/HeaderComponent';
-import Navbar from '../navbar/Navbar';
+import "./header.scss";
+
+import Navbar from "../navbar/Navbar";
+import HeaderComponent from "./components/HeaderComponent";
 
 export default function Header() {
-    return (
-        <header className='header'>
-            <HeaderComponent />
-            <Navbar/>
-        </header>
-    );
+  return (
+    <header className="header">
+      <HeaderComponent />
+      <Navbar />
+    </header>
+  );
 }
