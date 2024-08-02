@@ -22,6 +22,7 @@ export default function Navbar() {
                         <Link
                             key={tab.tab}
                             to={tab.tab === 'main' ? '/' : `/${tab.tab}`}
+                            // to={tab.tab === 'main' ? '/YurtaHome-frontend' : `/YurtaHome-frontend/${tab.tab}`}
                             className={activeTab === tab.tab ? 'active' : ''}
                             onClick={() => setActiveTab(tab.tab)}
                         >
