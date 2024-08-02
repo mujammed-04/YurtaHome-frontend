@@ -28,10 +28,26 @@ export default function HeaderComponent() {
           <Link to="/">
             <img src={Basket} alt="user" />
           </Link>
+          <Link to="login">
+            <Button
+              style={{
+                backgroundColor: "#fff",
+                padding: "5px 10px",
+                color: "black",
+                fontFamily: "Inter",
+                lineHeight: "22.4px",
+                fontWeight: "600",
+                textTransform: "none",
+              }}
+            >
+              Войти
+            </Button>
+          </Link>
+
           <Button
             sx={{
               bgcolor: "#1591EA",
-              padding: "5 10px",
+              padding: "5px 10px",
               color: "white",
               fontFamily: "Inter",
               lineHeight: "22.4px",
