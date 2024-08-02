@@ -14,23 +14,23 @@ export default function Navbar() {
   ];
 
   const [activeTab, setActiveTab] = useState("main");
-    return (
-        <nav className="navbar">
-            <div className="container">
-                <div className="navbar__wrapper">
-                    {tabs.map(tab => (
-                        <Link
-                            key={tab.tab}
-                            to={tab.tab === 'main' ? '/' : `/${tab.tab}`}
-                            // to={tab.tab === 'main' ? '/YurtaHome-frontend' : `/YurtaHome-frontend/${tab.tab}`}
-                            className={activeTab === tab.tab ? 'active' : ''}
-                            onClick={() => setActiveTab(tab.tab)}
-                        >
-                            {tab.name}
-                        </Link>
-                    ))}
-                </div>
-            </div>
-        </nav>
-    );
+  return (
+    <nav className="navbar">
+      <div className="container">
+        <div className="navbar__wrapper">
+          {tabs.map((tab) => (
+            <Link
+              key={tab.tab}
+              to={tab.tab === "main" ? "/" : `/${tab.tab}`}
+              // to={tab.tab === 'main' ? '/YurtaHome-frontend' : `/YurtaHome-frontend/${tab.tab}`}
+              className={activeTab === tab.tab ? "active" : ""}
+              onClick={() => setActiveTab(tab.tab)}
+            >
+              {tab.name}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </nav>
+  );
 }

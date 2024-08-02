@@ -1,6 +1,3 @@
-export default function RegisterPage(){
-    return(
-        <>
-        </>
-    )
+export default function RegisterPage() {
+  return <></>;
 }
