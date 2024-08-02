@@ -1,9 +1,6 @@
-.homepage {
-  margin-top: 110px;
-}
 .banner {
-  padding: 40px 0px;
-  font-family: "Inter", sans-serif;
+  padding-bottom: 40px;
+  font-family: 'Inter', sans-serif;
   display: flex;
   gap: 40px;
   justify-content: space-between;
