@@ -1,5 +1,5 @@
-export interface EIcon{
-    id?:number;
-    image?: string;
-    name?: string;
+export interface EIcon {
+  id?: number;
+  image?: string;
+  name?: string;
 }

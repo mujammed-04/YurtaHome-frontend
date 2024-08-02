@@ -1,9 +1,9 @@
-.homepage{
+.homepage {
   margin-top: 110px;
 }
 .banner {
   padding: 40px 0px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   gap: 40px;
   justify-content: space-between;
@@ -23,7 +23,7 @@
 }
 
 .big-banner::after {
-  content: 'Дизайн интерьера комнаты: интересные идеи оформления';
+  content: "Дизайн интерьера комнаты: интересные идеи оформления";
   position: relative;
   min-width: 500px;
   z-index: 3;
@@ -37,7 +37,7 @@
 .small-banner {
   display: flex;
   align-items: center;
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   color: #2c2c2c;
 }
 
@@ -45,11 +45,11 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .carousel {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
