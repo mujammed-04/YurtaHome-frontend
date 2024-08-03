@@ -14,6 +14,8 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 
+import { Logo } from "../../shared/icons";
+
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,13 +37,16 @@ export default function LoginPage() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: "10px",
+        gap: "20px",
         width: "100vw",
         height: "100vh",
         justifyContent: "center",
         fontFamily: "Inter",
       }}
     >
+      <Link href="/">
+        <img src={Logo} alt="logo" width="120px" height="70px" />
+      </Link>
       <TextField
         label="Эл.почта"
         variant="outlined"
