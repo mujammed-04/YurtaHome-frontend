@@ -1,14 +1,32 @@
-import { Button, TextField } from "@mui/material";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import {
+  Button,
+  Checkbox,
+  FormControl,
+  FormControlLabel,
+  IconButton,
+  InputAdornment,
+  InputLabel,
+  Link,
+  OutlinedInput,
+  TextField,
+} from "@mui/material";
 import { useState } from "react";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [rememberMe, setRememberMe] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleClickShowPassword = () => setShowPassword((show) => !show);
 
   const handleLogin = () => {
     // Логика обработки логина
     console.log("Email:", email);
     console.log("Password:", password);
+    console.log("rememberMe:", rememberMe);
   };
 
   return (
@@ -18,6 +36,10 @@ export default function LoginPage() {
         flexDirection: "column",
         alignItems: "center",
         gap: "10px",
+        width: "100vw",
+        height: "100vh",
+        justifyContent: "center",
+        fontFamily: "Inter",
       }}
     >
       <TextField
@@ -29,22 +51,39 @@ export default function LoginPage() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <TextField
-        label="Пароль"
-        type="password"
+      <FormControl
         variant="outlined"
         style={{ width: "30%" }}
         required
         size="small"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
+      >
+        <InputLabel htmlFor="password">Пароль</InputLabel>
+        <OutlinedInput
+          id="password"
+          type={showPassword ? "text" : "password"}
+          value={password}
+          label="Пароль"
+          onChange={(e) => setPassword(e.target.value)}
+          endAdornment={
+            <InputAdornment position="end">
+              <IconButton
+                aria-label="toggle password visibility"
+                onClick={handleClickShowPassword}
+                edge="end"
+              >
+                {showPassword ? <Visibility /> : <VisibilityOff />}
+              </IconButton>
+            </InputAdornment>
+          }
+        />
+      </FormControl>
 
       <Button
         style={{
           backgroundColor: "#1591EA",
-          padding: "5px 15px",
+          padding: "5px",
           color: "white",
+          width: "30%",
           fontFamily: "Inter",
           lineHeight: "22.4px",
           fontWeight: "600",
@@ -54,7 +93,37 @@ export default function LoginPage() {
       >
         Войти
       </Button>
-      <p>Регистрация</p>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "30%",
+        }}
+      >
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={rememberMe}
+              onChange={(e) => setRememberMe(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Запомнить меня"
+        />
+        <Link href="login/forgot" color="#000" style={{ fontSize: "16px" }}>
+          Забыли пароль
+        </Link>
+      </div>
+
+      <p style={{ fontSize: "16px" }}>
+        Впервые здесь?{" "}
+        <Link href="register" color="#000" style={{ fontSize: "16px" }}>
+          Зарегистрироваться
+        </Link>
+      </p>
     </div>
   );
 }
