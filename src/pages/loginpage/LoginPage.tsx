@@ -5,6 +5,7 @@ import {
   Checkbox,
   FormControl,
   FormControlLabel,
+  FormHelperText,
   IconButton,
   InputAdornment,
   InputLabel,
@@ -21,14 +22,35 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [passwordError, setPasswordError] = useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
   const handleLogin = () => {
-    // Логика обработки логина
-    console.log("Email:", email);
-    console.log("Password:", password);
-    console.log("rememberMe:", rememberMe);
+    const emailValid = email.includes("@") && email.includes(".");
+    const passwordValid = password.length > 0;
+
+    setEmailError(!emailValid);
+    setPasswordError(!passwordValid);
+
+    if (emailValid && passwordValid) {
+      console.log("Email:", email);
+      console.log("Password:", password);
+      console.log("rememberMe:", rememberMe);
+    }
+  };
+
+  const filterEmailInput = (value: string) => {
+    const regex = /^[a-zA-Z0-9._-]*@?[a-zA-Z0-9.-]*$/;
+    return regex.test(value);
+  };
+
+  const handleEmailChange = (e: { target: { value: any } }) => {
+    const value = e.target.value;
+    if (filterEmailInput(value)) {
+      setEmail(value);
+    }
   };
 
   return (
@@ -45,7 +67,7 @@ export default function LoginPage() {
       }}
     >
       <Link href="/">
-        <img src={Logo} alt="logo" width="120px" height="70px" />
+        <img src={Logo} alt="logo" width="160px" height="110px" />
       </Link>
       <TextField
         label="Эл.почта"
@@ -54,13 +76,17 @@ export default function LoginPage() {
         required
         size="small"
         value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={handleEmailChange}
+        error={emailError}
+        helperText={emailError ? "Пожалуйста, введите корректную эл.почту" : ""}
+        FormHelperTextProps={{ style: { color: "#d32f2f" } }}
       />
       <FormControl
         variant="outlined"
         style={{ width: "30%" }}
         required
         size="small"
+        error={passwordError}
       >
         <InputLabel htmlFor="password">Пароль</InputLabel>
         <OutlinedInput
@@ -81,6 +107,9 @@ export default function LoginPage() {
             </InputAdornment>
           }
         />
+        <FormHelperText style={{ color: "#d32f2f" }}>
+          {passwordError ? "Пожалуйста, введите пароль" : ""}
+        </FormHelperText>
       </FormControl>
 
       <Button
