@@ -46,6 +46,7 @@ export default function LoginPage() {
     return regex.test(value);
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleEmailChange = (e: { target: { value: any } }) => {
     const value = e.target.value;
     if (filterEmailInput(value)) {

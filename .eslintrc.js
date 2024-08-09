@@ -38,11 +38,10 @@ module.exports = {
     "react-hooks",
     "@typescript-eslint",
     "react",
+    "unused-imports",
   ],
   rules: {
-    "react/react-in-jsx-scope": "off",
     "prettier/prettier": ["error", {}, { usePrettierrc: true }],
-    "no-unused-vars": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "off",
@@ -52,5 +51,17 @@ module.exports = {
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/label-has-associated-control": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        vars: "all",
+        varsIgnorePattern: "^_",
+        args: "after-used",
+        argsIgnorePattern: "^_",
+      },
+    ],
   },
 };
